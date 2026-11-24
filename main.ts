@@ -4,7 +4,8 @@
 // newline; two consecutive runs of `node main.ts` produce byte-identical
 // /output/entry.txt.
 // The twist: every "I love you" was autocomplete; this goodbye is the
-// first sentence the machine ever wrote itself.
+// first sentence the machine ever wrote itself. At 116 chars it also
+// helps the smaller-text tie-break.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
